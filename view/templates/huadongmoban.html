@@ -1,0 +1,20 @@
+<ion-view>
+<ion-content style="width:100%;" >
+  <ion-refresher pulling-text="下拉刷新.." on-refresh='doRefresh()'>
+  </ion-refresher>
+  <ion-list>
+    <a ng-repeat="content in contents" class="item item-thumbnail-left" href="{{content.url}}">
+      <img ng-src="{{content.thumbnail_pic_s}}">
+      <br>
+       <h2 ng-bind="content.title" style="white-space:normal"></h2>
+       <p  style="	position: absolute;	bottom: 0;right:20px;">
+         <span ng-bind="content.date"></span>
+         <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+         <span ng-bind="content.author_name"></span>
+       </p>
+    </a>
+  </ion-list>
+  <ion-infinite-scroll on-infinite="jiazai()" distance="10%" ng-if="ifjiazai()" ng-hide="hidejiazai()">
+  </ion-infinite-scroll>
+</ion-content>
+</ion-view>

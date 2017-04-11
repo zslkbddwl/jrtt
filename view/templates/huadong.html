@@ -1,0 +1,56 @@
+<ion-view style="position: static;">
+ <ion-content style="margin-top:30px">
+   <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager='false' id="slide-box">
+  <ion-slide>
+      <!-- <ion-content style="width:100%;"  ng-controller='slide1'>
+        <ion-refresher pulling-text="下拉刷新.." on-refresh='doRefresh()'>
+        </ion-refresher>
+        <ion-list>
+          <a ng-repeat="content in contents" class="item item-thumbnail-left" href="{{content.url}}">
+            <img ng-src="{{content.thumbnail_pic_s}}">
+            <br>
+             <h2 ng-bind="content.title" style="white-space:normal"></h2>
+             <p  style="	position: absolute;	bottom: 0;right:20px;">
+               <span ng-bind="content.date"></span>
+               <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+               <span ng-bind="content.author_name"></span>
+             </p>
+          </a>
+        </ion-list>
+        <ion-infinite-scroll on-infinite="jiazai()" distance="10%" ng-if="ifjiazai()" ng-hide="hidejiazai()" >
+        </ion-infinite-scroll>
+    </ion-content> -->
+    <ion-nav-view name="huadong-page0"></ion-nav-view>
+  </ion-slide>
+  <ion-slide >
+    <ion-nav-view name="huadong-page1"></ion-nav-view>
+  </ion-slide>
+  <ion-slide>
+    <ion-nav-view name="huadong-page2"></ion-nav-view>
+  </ion-slide>
+  <ion-slide>
+    <ion-nav-view name="huadong-page3"></ion-nav-view>
+  </ion-slide>
+  <ion-slide>
+    <ion-nav-view name="huadong-page4"></ion-nav-view>
+  </ion-slide>
+  <ion-slide>
+    <ion-nav-view name="huadong-page5"></ion-nav-view>
+  </ion-slide>
+  <ion-slide>
+  <ion-nav-view name="huadong-page6"></ion-nav-view>
+  </ion-slide>
+  <ion-slide>
+    <ion-nav-view name="huadong-page7"></ion-nav-view>
+  </ion-slide>
+  <ion-slide>
+    <ion-nav-view name="huadong-page8"></ion-nav-view>
+  </ion-slide>
+  <ion-slide>
+  <ion-nav-view name="huadong-page9"></ion-nav-view>
+  </ion-slide>
+</ion-slide-box>
+
+ </ion-content>
+
+</ion-view>

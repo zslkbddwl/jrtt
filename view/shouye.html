@@ -1,0 +1,18 @@
+<ion-view class="shouye">
+  <ion-header-bar class="bar-assertive" align-title='center'>
+        <h3 style="width:25%;text-align:center">今日头条</h3>
+        <div class="item-input-inset" style="width:75%">
+          <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" placeholder="搜索">
+          </label>
+        </div>
+  </ion-header-bar>
+  <ion-content delegate-handle="navScroll" has-bouncing='false' direction="x" scrollbar-x='false' overflow-scroll='false' style="width: 100%; height: 30px;z-index:20">
+          <div style="width:1000px;height:30px;background-color:#F6F6F6;display:flex;	align-items: center;" id="toububutton" >
+            <button class="button button-clear "  ng-repeat="title in titles" ng-click="navBtnClick($index)" style="width:100px;color:black" ng-bind="title" >
+    	 			</button>
+          </div>
+  </ion-content>
+<ion-nav-view></ion-nav-view>
+</ion-view>
